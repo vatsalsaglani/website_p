@@ -1,735 +1,368 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>theVatsalSaglani || Welcome!</title>
-    <link rel="icon" type="image/ico" href="images/VS.png">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
+
 </head>
 
 <body>
-    <!-- DESKTOP -->
-    <section class="homeDesktop uk-visible@m" id="homeDesktop">
-        <div class="uk-position-relative">
+    <!-- <medAbove> -->
+    <section class="onlySection uk-visible@m">
+        <div class="contentContainer uk-grid-collapse uk-child-width-expand@s" uk-grid>
 
-            <div class="uk-position-top">
-                <nav class="uk-navbar-container uk-navbar-transparent uk-margin" uk-navbar uk-sticky>
-                    <div class="uk-navbar-center">
-                        <div class="uk-navbar-center-left">
-                            <ul class="uk-navbar-nav">
-                                <li>
-                                    <a href="#about" class="uk-text-primary" class="uk-text-primary" uk-scroll>About</a>
-                                </li>
-                                <li>
-                                    <a href="#projects" class="uk-text-primary" uk-scroll>WORK</a>
-                                </li>
-
-                            </ul>
-
-                        </div>
-                        <a href="#homeDesktop" class="uk-navbar-item uk-logo uk-text-primary" uk-scroll>theVATSALSAGLANI</a>
-                        <div class="uk-navbar-center-right">
-                            <ul class="uk-navbar-nav">
-                                <li>
-
-                                    <a href="#blog" class="uk-text-primary" uk-scroll>BLOG</a>
-                                </li>
-                                <li>
-
-                                    <a href="#contact" class="uk-text-primary" uk-scroll>CONTACT</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <!-- Here -->
-
-                <div class="uk-position-small uk-position-center-right uk-overlay " style="padding-top: 45%; padding-right: 10%;">
-                    <div class="typing">
-                        <div class="uk-card uk-card-hover uk-card-body ">
-                            <h1 class="element uk-text-center uk-align-center" style="display: inline;"></h1>
-                        </div>
-
-                    </div>
+            <!-- left side container -->
+            <div class=" leftContent">
+                <div class="uk-text-center navContainer">
+                    <h2><a href="#modalAbout" class="uk-link-reset" uk-toggle>ABOUT</a></h2>
+                    <h2><a href="#modalWork" class="uk-link-reset" uk-toggle>WORK</a></h2>
+                    <h2><a href="#modalBlog" class="uk-link-reset" uk-toggle>BLOGS</a></h2>
+                    <h2><a href="#modalContact" class="uk-link-reset" uk-toggle>CONTACT</a></h2>
 
                 </div>
-                <!-- <div class="uk-inline uk-margin">
-                        <div class="uk-position-small uk-position-bottom-center uk-overlay uk-overlay-default">Bottom Center</div>
-                    </div> -->
 
             </div>
 
-        </div>
-        <div class="uk-position-small uk-position-bottom-center" uk-scrollspy="target: > h1, a; cls: uk-animation-fade; delay: 300">
-            <h1 uk-margin>
-                <a class="uk-button uk-button-primary uk-button-large uk-hover" href="#contact" style="opacity: 0.7; border-radius: 2%; font-weight: bold;"
-                    uk-scroll>CONTACT</a>
-                <a href="https://drive.google.com/file/d/1_qmPxixwRwp_6-CILoIHOUnnDva6ZNEw/view" target="_blank" class="uk-button uk-button-primary uk-hover uk-button-large"
-                    style="opacity: 0.7; border-radius: 2%; font-weight: bold;">RESUME</a>
-            </h1>
-        </div>
-        <div class="uk-position-medium uk-position-center-left" style="padding-left: 15%" uk-scrollspy="target: > a; cls: uk-animation-scale-up; delay: 400; repeat: true">
-            <img src="/images/vatsal-stone-bokeh.jpg" alt="VatsalSaglani" width="25%" height="30%" style="border: 8px solid white; border-radius: 2%; transform: rotate(-20deg); box-shadow: 17px 17px 7px 7px gray;  ">
-            <a class="uk-position-absolute uk-transform-center" style="left: 16%; top: 10%;" href="#">
-                <span class="uk-icon uk-icon-image uk-icon-large" style="background-image: url('/images/pin.png');"></span>
-            </a>
+            <!-- <modals> -->
+            <!-- <aboutModal> -->
 
-            <!-- <span uk-icon = "icon: plus-circle; ratio: 2.3" style="color: bisque; transform: rotate(20deg); font-weight: bolder; "></span> -->
-        </div>
+            <div id="modalAbout" class="uk-modal-full modalContent" style="background-color: #0C0B34; height: 100vh;"
+                uk-modal>
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                <div class="uk-container uk-padding-large  ">
+                    <h1 class="modalHeading">ABOUT</h1>
+                </div>
+                <div class="uk-container">
+                    <div class="uk-grid-collapse uk-child-width-1-2@s" uk-grid>
+                        <div class="aboutLeft uk-padding-small ">
+                            <h1 class="modalSubHeading">Sup,</h1>
+                            <p>I am a Machine Learning, and Artificial Intelligence enthusiast, full stack web
+                                developer, and a nascent native applications developer currently pursuing my <b>Bachelors
+                                    in Computer Science</b> at <b>Vellore Institute of Technology</b>. </p>
+                        </div>
+                        <div class="aboutRight uk-padding-small ">
+                            <h1 class="modalSubHeading">Love to solve</h1>
+                            <p>real-world problems and develop recommender systems. I am continually
+                                trying new ways to integrate my machine learning models to the web. Moreover, I am
+                                always on the learning path to grasp everything that interests me. </p>
+                        </div>
+                    </div>
+                    <div class="uk-grid-collapse uk-child-width-1-2@s" uk-grid>
+                        <div class="aboutLeft uk-padding-small ">
+                            <h1 class="modalSubHeading">I am also interested in</h1>
+                            <ul class="uk-list">
+                                <li>
+                                    <h4>Computer Vision</h4>
+                                </li>
+                                <li>
+                                    <h4>Natural Language Processing</h4>
+                                </li>
+                                <li>
+                                    <h4>Internet of Things</h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="aboutRight uk-padding-small ">
+                            <h1 class="modalSubHeading">I write</h1>
+                            <p>programming <a href="https://medium.com/@thevatsalsaglani" target="_blank" style="text-decoration: none">blogs</a>
+                                related to python, machine learning, web scraping, and web
+                                development. My primary motivation is to help others like me through these blogs of
+                                mine.
+                            </p>
 
+                        </div>
+                    </div>
+                    <div class="uk-text-center uk-margin-top uk-padding-small coffeeCode">
+                        <i>
+                            <p> <span uk-icon="code" class="code uk-icon-button"></span> and spread <span uk-icon="heart"
+                                    class="uk-icon-button heart" style="background-color: red"></span> </p>
+                        </i>
+                    </div>
+                </div>
+            </div>
 
+            <!-- </aboutModal> -->
 
-    </section>
+            <!-- <workModal> -->
+            <div id="modalWork" class="uk-modal-full modalContent" style="background-color: #0C0B34; height: 100vh;"
+                uk-modal>
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                <div class="uk-container uk-padding-large  ">
+                    <h1 class="modalHeading">WORK</h1>
+                </div>
+                <div class="uk-container workModalContent">
+                    <div class="uk-grid-collapse uk-grid-divider uk-child-width-1-2@s" uk-grid>
+                        <div class="aboutLeft  ">
+                            <h1 class="modalSubHeading uk-text-center">Research Works</h1>
+                            <ul class="uk-list" style="padding-top: 20px">
+                                <!-- paper-1 -->
+                                <li><a href="https://ieeexplore.ieee.org/document/8553889" target="_blank" class="uk-link-reset">
 
+                                        <span class="uk-text-centet">"Classifying and Predicting DoS and DDoS Attacks
+                                            on
+                                            Cloud Services"<br><span>-</span>
+                                            <span style="color: gray; font-family: 'Righteous', cursive;"><i style="color: gray;">B.
+                                                    S. Kiruthika Devi; Vatsal J.
+                                                    Saglani; Aayush V. Gupta; Dr. T Subbulakshmi.</i></span>
+                                        </span>
 
-    <section class="parallax uk-visible@m" uk-scrollspy="target: > div, h1, p; cls: uk-animation-fade; delay: 500; repeat: true">
-        <div class="uk-height-large uk-background-cover uk-light uk-flex uk-overflow-hidden uk-flex-top" uk-parallax="bgy: -200"
-            style="background-image: url('/images/wall4.jpeg');">
-
-            <div class="uk-container uk-container-small">
-                <h1 class="uk-heading-line" style="padding-top: 25px;">
-                    <span>PUBLICATIONS</span>
-                </h1>
-                <div class="uk-grid-match uk-grid-small uk-child-width-1-2@m uk-margin-auto uk-margin-auto-vertical uk-flex-inline uk-container-small">
-
-
-                    <div>
-                        <div class="uk-card uk-card-secondary uk-card-hover uk-padding-small" uk-parallax="target: #test-easing; y: 80; easing: 0"
-                            style="border-radius: 2%;">
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Research Paper - 1</h3>
-                                <p>Presented and published a research paper on the topic of Machine Learning and Cyber
-                                    Secyrity
-                                    in a IEEE conference(ICOEI-2018).</p>
-                            </div>
-                            <div class="uk-card-media-bottom uk-thumbnav">
-                                <li class="uk-active uk-align-center">
-                                    <a href="#openone" uk-toggle>
-                                        <img src="/images/one.jpg" width="30" alt="">
                                     </a>
                                 </li>
-                            </div>
-                            <a href="#paper1" uk-tooltip="Check Paper - 1" class="uk-button uk-button-default"
-                                uk-scroll>
-                                <span uk-icon="icon: chevron-down"></span>
-                            </a>
+                                <!-- /paper-1 -->
 
-                        </div>
+                                <!-- paper-2 -->
+                                <li style="padding-top: 25px;"><a href="https://ieeexplore.ieee.org/document/8553780"
+                                        target="_blank" class="uk-link-reset">
 
-                    </div>
-                    <div class="uk-flex-top" id="openone" uk-modal>
-                        <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
-                            <button class="uk-modal-close-outside" type="button" uk-close></button>
-                            <img src="/images/one.jpg" alt="Certificate 1">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-secondary uk-card-hover uk-padding-small" uk-parallax="target: #test-easing; y: 80; easing: 0"
-                            style="border-radius: 2%;">
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Research Paper - 2</h3>
-                                <p>Presented and published a research paper on the topic of Machine Learning and Cyber
-                                    Secyrity
-                                    in a IEEE conference(ICOEI-2018).</p>
-                            </div>
-                            <div class="uk-card-media-bottom uk-thumbnav">
-                                <li class="uk-active uk-align-center">
-                                    <a href="#opentwo" uk-toggle>
-                                        <img src="/images/two.jpg" width="30" alt="">
+                                        <span class="uk-text-centet">“Malware Classification Using Machine Learning
+                                            Algorithms"<br><span>-</span>
+                                            <span style="color: gray; font-family: 'Righteous', cursive;"><i style="color: gray;">N.
+                                                    Udayakumar; Vatsal J. Saglani; Aayush
+                                                    V. Gupta; Dr. T Subbulakshmi.</i></span>
+                                        </span>
+
                                     </a>
                                 </li>
+                                <!-- /paper-2 -->
 
-                            </div>
-                            <li>
-                                <a href="#paper2" uk-tooltip="Check Paper - 2" class="uk-button uk-button-default"
-                                    uk-scroll>
-                                    <span uk-icon="icon: chevron-down"></span>
-                                </a>
-                            </li>
+                                <!-- paper-3 -->
+                                <li style="padding-top: 25px;"><a href="https://drive.google.com/file/d/1OWQQ7EDgCwBUj6RojG5aUOsIm6nfOO1M/view?usp=sharing"
+                                        target="_blank" class="uk-link-reset">
+
+                                        <span class="uk-text-centet">“IoT based Smart Safe System"<br><span>-</span>
+                                            <span style="color: gray; font-family: 'Righteous', cursive;"><i style="color: gray;">Vatsal
+                                                    J. Saglani; Aayush V. Gupta; Rupam Sarma; Dr. D Rekha; Shashank
+                                                    Pathak.</i></span>
+                                        </span>
+
+                                    </a>
+                                </li>
+                                <!-- /paper-3 -->
+
+                            </ul>
+                        </div>
+                        <div class="aboutRight">
+                            <h1 class="modalSubHeading uk-text-center">Notable Projects</h1>
+                            <ul class="uk-list" style="padding-top: 20px">
+                                <!-- Project 1 -->
+                                <li><a href="https://github.com/vatsalsaglani/Book-Recommendation-System-using-Sentiment-Analysis"
+                                        target="_blank" class="uk-link-reset">
+
+                                        <h3 class="uk-text-centet" style="color: white; font-family: 'Righteous', cursive;">Book
+                                            Recommendation using Sentiment Analysis
+                                            and NoSQL database.
+
+                                        </h3>
+
+                                    </a>
+                                </li>
+                                <!-- /Project 1 -->
+
+                                <!-- Project 2 -->
+                                <li><a href="https://github.com/vatsalsaglani/connection" target="_blank" class="uk-link-reset">
+
+                                        <h3 class="uk-text-centet" style="color: white; font-family: 'Righteous', cursive;">Connection
+                                            - A Social networking web application
+                                            using Ruby on Rails.
+                                        </h3>
+
+                                    </a>
+                                </li>
+                                <!-- /Project 2 -->
+
+                                <!-- Project 3 -->
+                                <li><a href="https://github.com/vatsalsaglani/nodejsSocialMediaApi" target="_blank"
+                                        class="uk-link-reset">
+
+                                        <h3 class="uk-text-centet" style="color: white; font-family: 'Righteous', cursive;">NodeJS
+                                            Social Media API.
+                                        </h3>
+
+                                    </a>
+                                </li>
+                                <!-- /Project 3 -->
 
 
+                            </ul>
                         </div>
                     </div>
-                    <div class="uk-flex-top" id="opentwo" uk-modal>
-                        <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
-                            <button class="uk-modal-close-outside" type="button" uk-close></button>
-                            <img src="/images/two.jpg" alt="Certificate 2">
-                        </div>
+
+                    <div class="uk-text-center uk-margin-large coffeeCode">
+                        <i>
+                            <span>Find more on </span><a href="https://github.com/vatsalsaglani" uk-icon="icon: github; ratio: 2"></a>
+                        </i>
                     </div>
-                </div>
-            </div>
-        </div>
 
-
-    </section>
-
-    <section class="about  uk-visible@m" id="about" uk-parallax="hue: 400;" style="background-image: url('/images/wall1.jpeg'); background-repeat: no-repeat; background-size: cover;">
-        <div class="uk-container uk-container-small uk-section " uk-scrollspy="target: >div, h1, p; cls: uk-animation-fade; delay: 400; repeat: true">
-            <h1 class="uk-heading-line" style="padding-top: 25px;">
-                <span>ABOUT</span>
-            </h1>
-            <div class="uk-grid-match uk-child-width-1-4@m uk-grid-divider " uk-grid>
-                <div>
-                    <p class="uk-text-justify">Hey, this is Vatsal Saglani as you may know by now. Apart from
-                        developing native applications, I strongly
-                        believe that data and Machine Learning will help everyone everywhere. With technology going in
-                        the
-                        direction of smart devices, I have my focus on Internet of Things (IoT), Security of smart
-                        devices
-                        and Computer Vision. Along with Machine Learning</p>
-                </div>
-                <div>
-                    <p class="uk-text-justify">and Internet of Things, I have a keen interest in Natural Language
-                        Processing and building Recommender
-                        Systems. In short, whenever and wherever I get some data, I try to work with that and find some
-                        useful
-                        context from that data.Apart from being an over enthusiastic nerd, I like to write about things
-                        and
-                        incidents
-                    </p>
-                </div>
-                <div>
-                    <p class="uk-text-justify">happening around me and sometimes about myself in third person. Mr.
-                        Vatsal Saglani likes to read and
-                        write when he is free, which he is always. When around people, he pretends to think about
-                        something
-                        to avoid conversations. Oh, he isn’t an introvert, but an overthinking introvert who loves
-                        solitude
-                        and would prefer his own company over someone else’s.
-                    </p>
-                </div>
-                <div>
-                    <p class="uk-text-justify">He is a very good team player and always likes to take charge and lead
-                        the team. He is a newbie in the
-                        freelance business, you can hire him for making your website look a lot nicer, getting insights
-                        from
-                        the data you got or data generated by your business or developing some application which would
-                        be
-                        useful for you and your business. </p>
-                </div>
-
-            </div>
-    </section>
-
-    <section class="projects uk-visible@m" id="projects" uk-scrollspy="target: > div, .uk-card-secondary, p, a, h2; cls: uk-animation-fade; delay: 400; repeat: true">
-        <div id="test-easing" class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
-            uk-parallax="hue: 130;" style="background-image: url('images/wall4.jpeg');">
-            <div class="uk-container">
-                <h1 class="uk-heading-line" style="padding-top: 10px">
-                    <span>WORK</span>
-                </h1>
-                <div class="uk-grid-match uk-grid-small uk-child-width-1-3@m uk-margin-auto uk-margin-auto-vertical uk-flex-inline uk-container-small"
-                    style="padding-bottom: 55px;">
-
-
-                    <div>
-                        <div class="uk-card uk-card-secondary uk-card-hover uk-padding-small" uk-parallax="target: #test-easing; y: 20; easing: 0"
-                            style="border-radius: 2%;">
-                            <h2 class="uk-card-title uk-text-center">PROJECTS COMPLETED</h2>
-                            <p class="uk-text-justify">During the academic cirriculam, I have completed approximately
-                                15 small and big projects.</p>
-                            <br>
-                            <div class="uk-card-footer">
-                                <a href="https://github.com/vatsalsaglani" target="_blank" class="uk-align-left uk-button ">
-                                    <span uk-icon="icon: github"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-secondary uk-card-hover uk-padding-small" uk-parallax="target: #test-easing; y: 20; easing: 0"
-                            style="border-radius: 2%;">
-                            <h2 class="uk-card-title uk-text-center uk-text-inline">RESEARCH PAPERS</h2>
-                            <p class="uk-text-justify">Presented and published 2 research papers on the topic of Cyber
-                                Security and Machine Learning
-                                in an IEEE Conference.</p>
-                            <div class="uk-card-footer">
-                                <a href="https://drive.google.com/file/d/1oC1-Tg_HWjIqmOKv6P4dLkc8VDxdPy2W/view?usp=sharing"
-                                    target="_blank" id="paper1" class="uk-align-left uk-button uk-button-text ">PAPER 1</a>
-                                <a href="https://drive.google.com/file/d/1GhC60RkrrP7ymViONqVewllo27CTH4ZL/view?usp=sharing
-                                        "
-                                    class="uk-align-left uk-button uk-button-text " id="paper2" target="_blank">PAPER 2</a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-secondary uk-card-hover uk-padding-small" uk-parallax="target: #test-easing; y: 20; easing: 0"
-                            style="border-radius: 2%;">
-                            <h2 class="uk-card-title uk-text-center uk-text-inline">SIDE PROJECTS</h2>
-                            <p class="uk-text-justify">Including the academic projects, I have been working on some
-                                side projects to learn something
-                                new and below I have given some couple of links to live demo of those projects.</p>
-                            <div class="uk-card-footer">
-                                <a href="https://socialn.herokuapp.com/" uk-tooltip="Social N" target="_blank" class="uk-icon-button uk-margin-small-right"
-                                    uk-icon="link"></a>
-                                <a href="http://nidhirealtors.surge.sh" uk-tooltip="Real Estate Website" target="_blank"
-                                    class="uk-icon-button uk-margin-small-right" uk-icon="link"></a>
-
-
-                            </div>
-                        </div>
+                    <div class="uk-text-center uk-margin-large coffeeCode">
+                        <i>
+                            <p> <span uk-icon="code" class="code uk-icon-button"></span> and spread <span uk-icon="heart"
+                                    class="uk-icon-button heart" style="background-color: red"></span> </p>
+                        </i>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <!-- </workModal> -->
 
-    <section class="uk-visible@m" id="blog" style="background-image: url('images/wall1.jpeg'); background-repeat: no-repeat; background-size: cover"
-        uk-scrollspy="target: > div, h1, p; cls: uk-animation-fade; delay: 500; repeat: true">
-        <div class="uk-container uk-container-small">
-            <h1 class="uk-heading-line" style="padding-top: 55px;">
-                <span>BLOGS</span>
-            </h1>
-            <div class="uk-child-width-1-3@m uk-container" uk-grid>
-                <div class="uk-align-left">
-                    <div class="uk-card uk-card-secondary" style="border-radius: 2%; margin-top: 10px">
-                        <div class="uk-card-media-top">
+
+            <!-- <blogModal> -->
+
+            <div id="modalBlog" class="uk-modal-full modalContent" style="background-color: #0C0B34; height: 100vh;"
+                uk-modal>
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                <div class="uk-container uk-padding-large  ">
+                    <h1 class="modalHeading">BLOGS</h1>
+                </div>
+                <div class="uk-container uk-container-small">
+                    <div class="uk-align-center uk-box-shadow-bottom uk-box-shadow-small uk-border-rounded" style="background-color: white">
+
+                        <div class="uk-padding-large">
+                            <img src="images/maskpage.png" alt="">
+                            <h2 class="uk-text-emphasis" style="font-family: 'Righteous', cursive;">Working with
+                                Firebase Real-Time database using ReactJS and UIKit and finally launching the web-app
+                                to Netlify.</h2>
+                            <p class="uk-text-truncate uk-text-muted" style="font-family: 'Righteous', cursive;">
+                                Before starting with this react + firebase project you first need to setup your
+                                machine, install NODE and NPM. Follow this article.After completing the setup, you need
+                                to install create-react-app package, open the
+                                terminal and type in the following,
+                            </p>
+                            <div class="uk-align-center">
+                                <a href="https://medium.com/@thevatsalsaglani/working-with-firebase-real-time-database-using-reactjs-and-uikit-and-launching-to-netlify-ff92419289b2"
+                                    target="_blank" class="uk-button uk-button-text">READ MORE</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="uk-align-center uk-box-shadow-bottom uk-box-shadow-small uk-border-rounded" style="background-color: white">
+
+                        <div class="uk-padding-large">
                             <img src="images/blog1.png" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h3 class="uk-card-title">Web Scraping Using Python and BeautifulSoup!</h3>
-                            <p> <a href="blog1.html" class="uk-align-left uk-button uk-button-text ">READ</a></p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="uk-align-right" style="float: right">
-                    <div class="uk-card uk-card-secondary" style="border-radius: 2%; margin-top: 10px">
-                        <div class="uk-card-media-top">
-                            <img src="images/maskpage.png" alt="" width="1000px" height="500px">
-                        </div>
-                        <div class="uk-card-body">
-                            <h3 class="uk-card-title">ReactJS + Firebase + UIKit + Netlify</h3>
-                            <p> <a href="https://medium.com/@thevatsalsaglani/working-with-firebase-real-time-database-using-reactjs-and-uikit-and-launching-to-netlify-ff92419289b2" target="_blank" class="uk-align-left uk-button uk-button-text ">READ</a></p>
-                            
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-        </div>
-        
-    </section>
+                            <h2 class="uk-text-emphasis" style="font-family: 'Righteous', cursive;">Web Scraping using
+                                Python and BeautifulSoup.</h2>
+                            <p class="uk-text-truncate uk-text-muted" style="font-family: 'Righteous', cursive;">
+                                Recently, I had to gather some textual data for my Natural
+                                Language Processing project for rating restaurants based on their food, ambience,
+                                service and other important factors. You would think, “ooh, its like all the other
+                                NLP related projects were sentiment analysis is performed on the comments and a
+                                score is generated”, yes its the same but there is a catch, I won’t be using the
+                                comments of the common public but the reviews and ratings by some food bloggers.
+                            </p>
+                            <div class="uk-align-center">
+                                <a href="https://medium.com/@thevatsalsaglani/web-scraping-using-python-and-beautifulsoup-2e54e79415d6"
+                                    target="_blank" class="uk-button uk-button-text">READ MORE</a>
 
-
-
-    <!-- footer -->
-    <section class="footer uk-visible@m uk-light" style="background-color: black; padding-bottom: 55px; margin-bottom: -55px;"
-        id="contact">
-        <div class="uk-container uk-container-small">
-            <h1 class="uk-heading-line" style="padding-top: 55px;">
-                <span>CONTACT</span>
-            </h1>
-            <div style="padding-top: 15px;" uk-grid>
-                <div>
-                    <p class="uk-light">
-                        <a href="https://www.facebook.com/theVatsal.saglani" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="facebook"></a>
-                        <a href="https://twitter.com/thevatsal_s" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="twitter"></a>
-                        <a href="https://www.linkedin.com/in/vatsalsaglani/" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="linkedin"></a>
-                        <a href="https://github.com/vatsalsaglani" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="github"></a>
-                        <a href="https://www.tumblr.com/blog/thevatsalsaglani" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="tumblr"></a>
-
-                    </p>
-                </div>
-                <div>
-                    <p class="uk-light">
-                        <a href="mailto:youknowiamtrying@gmail.com" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="mail"></a>
-                        <a href="tel: +91 9790960353" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="whatsapp"></a>
-                        <a href="https://www.instagram.com/thevatsalsaglani/" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="instagram"></a>
-                        <a href="https://socialn.herokuapp.com/" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="link"></a>
-                    </p>
-                </div>
-
-            </div>
-
-
-        </div>
-        <p class="uk-text-center uk-align-left" style="color: gray;">© theVATSALSAGLANI 2018-2019</p>
-
-
-
-    </section>
-    <!-- /DESKTOP -->
-
-    <!-- MOBILE -->
-
-    <section class="uk-hidden@m mobHome" id="mobHome">
-
-        <button class="uk-margin-small-right " uk-icon="icon: menu; ratio: 1.5;" uk-toggle="target: #offcanvas-nav-primary"
-            style="padding-left: 7px;"></button>
-
-
-        <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
-            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-
-                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-
-                    <li>
-                        <a href="#homeMob" uk-scroll>
-                            <span class="uk-margin-small-right" uk-icon="icon: home"></span>HOME</a>
-                    </li>
-                    <li class="uk-nav-divider"></li>
-
-                    <li>
-                        <a href="#aboutMob" uk-scroll>
-                            <span class="uk-margin-small-right" uk-icon="icon: info"></span>ABOUT</a>
-                    </li>
-                    <li class="uk-nav-divider"></li>
-                    <li>
-                        <a href="#workMob" uk-scroll>
-                            <span class="uk-margin-small-right" uk-icon="icon: push"></span>WORK</a>
-                    </li>
-                    <li class="uk-nav-divider" uk-scroll></li>
-
-                    <li>
-                        <a href="#blogMob" uk-scroll>
-                            <span class="uk-margin-small-right" uk-icon="icon: pencil"></span>BLOG</a>
-                    </li>
-                    <li class="uk-nav-divider" uk-scroll></li>
-
-
-                    <li>
-                        <a href="#contactMob" uk-scroll>
-                            <span class="uk-margin-small-right" uk-icon="icon: phone"></span>CONTACT</a>
-                    </li>
-
-                </ul>
-
-            </div>
-        </div>
-        <h3 class="uk-heading-line uk-text-secondary uk-text-center" style="padding-top: -10px;">
-            <span>
-                <a href="#mobHome" class="uk-button-text uk-text-secondary" style="padding-top: -170px ; text-decoration: none; cursor: default;"
-                    uk-scroll>theVATSALSAGLANI</a>
-            </span>
-        </h3>
-        <!-- <a href="#homeMob" class="uk-heading-line uk-text-center uk-logo uk-text-primary" uk-scroll>theVATSALSAGLANI</a> -->
-        <div class="typingMob uk-position-small uk-position-center-left">
-            <h2 class="uk-text-center element1" style="display: inline; color: white;"></h2>
-        </div>
-        <div class="uk-position-small uk-position-bottom-center">
-            <h1 uk-margin>
-                <a class="uk-button uk-button-secondary uk-button-large uk-hover" href="#contactMob" style="opacity: 0.7; border-radius: 2%; font-weight: bold;"
-                    uk-scroll>CONTACT</a>
-                <a href="https://drive.google.com/file/d/1_qmPxixwRwp_6-CILoIHOUnnDva6ZNEw/view" target="_blank" class="uk-button uk-button-secondary uk-hover uk-button-large"
-                    style="opacity: 0.7; border-radius: 2%; font-weight: bold;">RESUME</a>
-            </h1>
-        </div>
-
-
-    </section>
-    <!-- aboutMob -->
-    <section class="aboutMob uk-hidden@m" id="aboutMob" uk-scrollspy="target: > h3, div, p; cls: uk-animation-fade; delay: 400; repeat: true;">
-        <div class="uk-container uk-container-small uk-light">
-            <h3 class="uk-heading-line uk-text-secondary">
-                <span>ABOUT</span>
-            </h3>
-            <div class="uk-grid-match uk-child-width-1-4@m uk-grid-divider " uk-grid>
-                <div>
-                    <p class="uk-text-justify" style="color: white;">Hey, this is Vatsal Saglani as you may know by
-                        now. Apart from developing native applications, I strongly
-                        believe that data and Machine Learning will help everyone everywhere. With technology going in
-                        the
-                        direction of smart devices, I have my focus on Internet of Things (IoT), Security of smart
-                        devices
-                        and Computer Vision. </p>
-                </div>
-                <div>
-                    <p class="uk-text-justify" style="color: white;">Along with Machine Learning and Internet of
-                        Things, I have a keen interest in Natural Language Processing
-                        and building Recommender Systems. In short, whenever and wherever I get some data, I try to
-                        work
-                        with that and find some useful context from that data.s
-                    </p>
-                </div>
-                <div>
-                    <p class="uk-text-justify" style="color: white;">Apart from being an over enthusiastic nerd, I like
-                        to write about things and incident happening around
-                        me and sometimes about myself in third person. Mr. Vatsal Saglani likes to read and write when
-                        he
-                        is free, which he is always. When around people, he pretends to think about something to avoid
-                        conversations.
-                        Oh, he isn’t an introvert, but an overthinking introvert who loves solitude and would prefer
-                        his
-                        own company over someone else’s.
-                    </p>
-                </div>
-                <div>
-                    <p class="uk-text-justify" style="color: white;">He is a very good team player and always likes to
-                        take charge and lead the team. He is a newbie in the
-                        freelance business, you can hire him for making your website look a lot nicer, getting insights
-                        from
-                        the data you got or data generated by your business or developing some application which would
-                        be
-                        useful for you and your business.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- /aboutMob -->
-
-    <!-- parallax -->
-    <section class="parallaxMob uk-hidden@m">
-        <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200; hue: 0, 20, 40, 60, 80, 100, 120, 140"
-            style="background-image: url('images/red-flower-bokeh.jpg');">
-            <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-                <h1 uk-parallax="opacity: 0,1,1; y: -100,0,0; viewport: 0.5;">PUBLICATIONS</h1>
-                <div class="uk-card uk-card-muted uk-card-small">
-                    <div class="uk-card-body">
-                        <p uk-parallax="opacity: 0,1,1; y: 100,0,0; viewport: 0.5;" class="uk-thumbnav uk-align-center"
-                            style="display: inline">
-                            <span>
-                                <a href="#openone1" uk-tooltip="Paper 1" uk-toggle>
-                                    <img src="/images/one.jpg" width="50" alt="">
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#opentwo2" uk-tooltip="Paper 2" uk-toggle>
-                                    <img src="/images/two.jpg" width="50" alt="">
-                                </a>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="uk-flex-top" id="openone1" uk-modal>
-                <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
-                    <button class="uk-modal-close-outside" type="button" uk-close></button>
-                    <img src="/images/one.jpg" alt="Certificate 1">
-                </div>
-            </div>
-            <div class="uk-flex-top" id="opentwo2" uk-modal>
-                <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
-                    <button class="uk-modal-close-outside" type="button" uk-close></button>
-                    <img src="/images/two.jpg" alt="Certificate 2">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /parallax -->
-
-
-
-    <!-- workMob -->
-    <section class="workMob uk-hidden@m" id="workMob" style="padding-top: 40px; padding-bottom: 40px" uk-scrollspy="target: > h3, div, .uk-card, a; cls: uk-animation-fade; delay: 400; repeat: true;">
-        <div class="uk-container uk-container-small">
-            <h3 class="uk-heading-line uk-text-secondary uk-light">
-                <span>WORK</span>
-            </h3>
-
-
-            <div uk-grid>
-                <div>
-                    <div class="uk-card uk-card-secondary uk-light uk-width-1-2@m">
-                        <div class="uk-card-header">
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-
-                                <div class="uk-width-expand">
-                                    <h3 class="uk-card-title uk-margin-remove-bottom">Projects</h3>
-                                </div>
                             </div>
                         </div>
-                        <div class="uk-card-body">
-                            <p>During the academic cirriculam, I have completed approximately 15 small and big
-                                projects.</p>
-                        </div>
-                        <div class="uk-card-footer">
-                            <a href="https://github.com/vatsalsaglani" target="_blank" class="uk-align-left uk-button ">
-                                <span uk-icon="icon: github"></span>
-                            </a>
-                        </div>
                     </div>
 
-                </div>
-                <div>
-                    <div class="uk-card uk-card-secondary uk-light uk-width-1-2@m">
-                        <div class="uk-card-header">
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
 
-                                <div class="uk-width-expand">
-                                    <h3 class="uk-card-title uk-margin-remove-bottom">Research Papers</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="uk-card-body">
-                            <p>Presented and published 2 research papers on the topic of Cyber Security and Machine
-                                Learning
-                                in an IEEE Conference.</p>
-                        </div>
-                        <div class="uk-card-footer">
-                            </a>
-                            <a href="https://drive.google.com/file/d/1oC1-Tg_HWjIqmOKv6P4dLkc8VDxdPy2W/view?usp=sharing"
-                                target="_blank" id="paper1" class="uk-align-left uk-button uk-button-text ">PAPER 1</a>
-                            <a href="https://drive.google.com/file/d/1GhC60RkrrP7ymViONqVewllo27CTH4ZL/view?usp=sharing
-                                                                            "
-                                class="uk-align-left uk-button uk-button-text " id="paper2" target="_blank">PAPER 2</a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-secondary uk-light uk-width-1-2@m">
-                        <div class="uk-card-header">
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
 
-                                <div class="uk-width-expand">
-                                    <h3 class="uk-card-title uk-margin-remove-bottom">Side Projects</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="uk-card-body">
-                            <p>Including the academic projects, I have been working on some side projects to learn
-                                something
-                                new and below I have given some couple of links to the live demo of those projects.</p>
-                        </div>
-                        <div class="uk-card-footer uk-light">
-                            <a href="https://socialn.herokuapp.com/" uk-tooltip="Social N" target="_blank" class="uk-icon-button uk-margin-small-right"
-                                uk-icon="link"></a>
-                            <a href="http://nidhirealtors.surge.sh" uk-tooltip="Real Estate Website" target="_blank"
-                                class="uk-icon-button uk-margin-small-right" uk-icon="link"></a>
-                        </div>
+
+
+
+                    <div class="uk-text-center uk-margin-top coffeeCode">
+                        <i>
+                            <p> <span uk-icon="code" class="code uk-icon-button"></span> and spread <span uk-icon="heart"
+                                    class="uk-icon-button heart" style="background-color: red"></span> </p>
+                        </i>
                     </div>
                 </div>
             </div>
-        </div>
 
+
+            <!-- </blogModal> -->
+
+            <!-- <contactModal> -->
+            <div id="modalContact" class="uk-modal-full modalContent" style="background-color: #0C0B34; height: 100vh;"
+                uk-modal>
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                <div class="uk-container uk-padding-large  ">
+                    <h1 class="modalHeading">CONTACT</h1>
+                </div>
+                <div class="uk-container uk-container-small uk-align-center">
+                    <ul class="uk-list uk-text-center">
+                        <li>shoot a <a href="mailto:youknowiamtrying@gmail.com" target="_blank" uk-icon="icon: mail; ratio: 2"></a></li>
+                        <li>friend me on <a href="https://www.facebook.com/theVatsal.saglani" target="_blank" uk-icon="icon: facebook; ratio: 2"></a></li>
+                        <li>follow me on <a href="https://www.instagram.com/thevatsalsaglani/" target="_blank" uk-icon="icon: instagram; ratio: 2"></a></li>
+                        <li>we can endorse each other on <a href="https://www.linkedin.com/in/vatsalsaglani/" target="_blank"
+                                uk-icon="icon: linkedin; ratio: 2"></a></li>
+                        <li>don't bother searching me on <a href="https://twitter.com/thevatsal_s" target="_blank"
+                                uk-icon="icon: twitter; ratio: 2"></a></li>
+                        <li>wait I am on <a href="https://thevatsalsaglani.tumblr.com" target="_blank" uk-icon="icon: tumblr; ratio: 2"></a></li>
+                        <li>or...</li>
+                        <li>text me on <a href="tel: +91 9790960353" target="_blank" uk-icon="icon: whatsapp; ratio: 2"></a></li>
+
+
+
+                    </ul>
+
+
+                    <div class="uk-text-center uk-margin-top coffeeCode uk-padding-small">
+                        <i>
+                            <p> <span uk-icon="code" class="code uk-icon-button"></span> and spread <span uk-icon="heart"
+                                    class="uk-icon-button heart" style="background-color: red"></span> </p>
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <!-- </contactModal> -->
+
+
+
+            <!-- </modals> -->
+
+            <!-- right side container -->
+            <div class="uk-grid-collapse rightContent">
+                <div class="rightBoxTyping">
+                    <h3>>></h3>
+                    <h3 class="element uk-text-center uk-align-center"></h3>
+
+                </div>
+
+            </div>
+        </div>
     </section>
-    <!-- /workMob -->
+    <!-- </medAbove> -->
 
+    <!-- <small> -->
+    <section class="phoneSection uk-hidden@m">
 
-    <section class="uk-hidden@m" id="blogMob" style="background-image: url('images/walll.jpeg'); background-repeat: no-repeat; background-size: cover"
-        uk-scrollspy="target: > div, h1, p; cls: uk-animation-fade; delay: 500; repeat: true">
-        <div class="uk-container uk-container-small">
-            <h1 class="uk-heading-line" style="padding-top: 55px;">
-                <span style="color: white;">BLOGS</span>
-            </h1>
+        <div class="uk-padding-large uk-text-center uk-box-shadow-small imageContent">
+            <img class="uk-border-rounded uk-align-center roundImage" src="images/vs3circle.png" width="190" height="190">
+            <p class="elementx uk-text-center" style="display: inline"></p>
         </div>
-        <div class="uk-grid-small uk-flex-middle" uk-grid>
-            <div class="uk-align-center">
-                <div class="uk-card uk-card-secondary" style="border-radius: 2%; margin-top: 10px">
-                    <div class="uk-card-media-top">
-                        <img src="images/blog1.png" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Web Scraping Using Python and BeautifulSoup!</h3>
-                        <p> <a href="blog1.html" class="uk-align-left uk-button uk-button-text ">READ</a></p>
-                    </div>
-                </div>
-            </div>
+
+        <div class="navContent uk-text-center uk-align-center">
+            <h3 class="uk-link-reset"><a href="#modalAbout" uk-toggle>ABOUT</a></h3>
+            <h3 class="uk-link-reset"><a href="#modalWork" uk-toggle>WORK</a></h3>
+            <h3 class="uk-link-reset"><a href="#modalBlog" uk-toggle>BLOGS</a></h3>
+            <h3 class="uk-link-reset"><a href="#modalContact" uk-toggle>CONTACT</a></h3>
 
         </div>
 
-        <div class="uk-grid-small uk-flex-middle" uk-grid>
-            <div class="uk-align-center">
-                <div class="uk-card uk-card-secondary" style="border-radius: 2%; margin-top: 10px">
-                    <div class="uk-card-media-top">
-                        <img src="images/maskpage.png" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">ReactJS + Firebase + UIKit + Netlify</h3>
-                        <p> <a href="https://medium.com/@thevatsalsaglani/working-with-firebase-real-time-database-using-reactjs-and-uikit-and-launching-to-netlify-ff92419289b2" target="_blank" class="uk-align-left uk-button uk-button-text ">READ</a></p>
-                    </div>
-                </div>
-            </div>
 
-        </div>
     </section>
 
 
-
-    <!-- contactMob -->
-    <section class="contactMob uk-hidden@m" id="contactMob" uk-scrollspy="target: > div, h1, p, a; cls: uk-animation-fade; delay: 400; repeat: true;">
-        <div class="uk-container uk-container-small">
-            <h1 class="uk-heading-line uk-text-default" style="padding-top: 55px;">
-                <span style="color: white;">CONTACT</span>
-            </h1>
-            <div style="padding-top: 15px;" uk-grid>
-                <div>
-                    <p class="uk-light">
-                        <a href="https://www.facebook.com/theVatsal.saglani" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="facebook"></a>
-                        <a href="https://twitter.com/thevatsal_s" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="twitter"></a>
-                        <a href="https://www.linkedin.com/in/vatsalsaglani/" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="linkedin"></a>
-                        <a href="https://github.com/vatsalsaglani" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="github"></a>
-                        <a href="https://www.tumblr.com/blog/thevatsalsaglani" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="tumblr"></a>
-
-                    </p>
-                </div>
-                <div>
-                    <p class="uk-light">
-                        <a href="mailto:youknowiamtrying@gmail.com" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="mail"></a>
-                        <a href="tel: +91 9790960353" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="whatsapp"></a>
-                        <a href="https://www.instagram.com/thevatsalsaglani/" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="instagram"></a>
-                        <a href="https://socialn.herokuapp.com/" target="_blank" class="uk-icon-button uk-margin-small-right"
-                            uk-icon="link"></a>
-                    </p>
-                </div>
-                <div>
-                    <p class="uk-text-center uk-align-center" style="color: gray;">© theVATSALSAGLANI 2018-2019</p>
-                </div>
-            </div>
-        </div>
+    <!-- <small> -->
 
 
-
-    </section>
-    <!-- /contactMob -->
-    <!-- /MOBILE -->
-
-
-
-
-
-
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script> -->
+    <!-- <script src="js/typed.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.js"></script>
-    <script>
-        var typed = new Typed('.element', {
-            strings: ["Hey, this is Vatsal Saglani. ^10000", "A Machine Learning Enthusiast, ^3500",
-                "Native Application Developer ^2000", "and a Full Stack Web Developer, ^1300",
-                "and A Proud Gujarati! ^1800", "Vatsal Saglani."
-            ],
-            typeSpeed: 68,
-            showCursor: true,
-            autoInsertCss: true
+    <script src="js/main.js"></script>
 
-        });
-    </script>
-    <script>
-        var typed1 = new Typed('.element1', {
-            strings: ["Hey, this is Vatsal Saglani. ^10000", "A Machine Learning Enthusiast, ^3500",
-                "Native Application Developer ^2000", "and a Full Stack Web Developer, ^1300",
-                "and A Proud Gujarati! ^1800", "Vatsal Saglani."
-            ],
-            typeSpeed: 68,
-            showCursor: true,
-            autoInsertCss: true
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit-icons.min.js"></script>
 </body>
 
 </html>

@@ -76,6 +76,32 @@ body {
 }
 
 
+.form-modal-button {
+    margin-top: 20px;
+    padding-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.form-modal-button p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-modal-button a{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-modal-button-phone p{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+.form-modal-button-phone a{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+
 .rightContent{
     background-image: url('../images/onStone05.jpg');
     background-size: cover;
